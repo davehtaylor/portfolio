@@ -1,0 +1,316 @@
+/* colors: 
+    F0C562  yellow
+    464646  grey */
+
+@font-face {
+    font-family: bookplate;
+    src: url("../fonts/Bookplate_Bold.woff") format("woff"),
+         url("../fonts/Bookplate_Bold.ttf") format("truetype"),
+         url("../fonts/Bookplate_Bold.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: bookplate;
+    src: url("../fonts/Bookplate_Bold_Italic.woff") format("woff"),
+         url("../fonts/Bookplate_Bold_Italic.ttf") format("truetype"),
+         url("../fonts/Bookplate_Bold_Italic.svg") format("svg");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: bookplate;
+    src: url("../fonts/Bookplate.woff") format("woff"),
+         url("../fonts/Bookplate.ttf") format("truetype"),
+         url("../fonts/Bookplate.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: bookplate;
+    src: url("../fonts/Bookplate_Italic.woff") format("woff"),
+         url("../fonts/Bookplate_Italic.ttf") format("truetype"),
+         url("../fonts/Bookplate_Italic.svg") format("svg");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: futura;
+    src: url("../fonts/Futura_Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: futura;
+    src: url("../fonts/Futura_Heavy.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    color: #464646; 
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: bookplate;
+    font-size: 8vw;
+    color: #464646;
+    margin: 0;
+    padding: 0;
+    padding-top: 14vw;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 8vw;
+    font-family: bookplate;
+    font-size: 4vw;
+    color: #464646;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:link,
+a:visited {
+    color: #464646;
+    text-decoration: none;
+}   
+
+a:hover, 
+a:active {
+    color: #464646;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    
+}
+
+.hero {
+    background-color: #F0C562;
+    height: 100vh;
+    width: 100%;
+    padding-left: 12vw;
+}
+
+.hero h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+nav {
+    font-family: futura;
+    display: none;
+}
+
+.downArrow {
+    position: absolute;
+    font-size: 3vw;
+    bottom: 2vw;
+    left: 50%;
+}
+
+.whatIDo {
+    height: 100vh;
+    width: 100%;
+    padding-left: 12vw;
+}
+
+.whatIDoIcons {
+    font-size: 3.5vw;
+}
+
+#whatIDoGrid {
+    display: grid;
+    grid-template-columns: 8vw 65vw;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    font-family: futura;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+}
+
+.skills {
+    background-color: #464646;
+    color: #F0C562;
+    height: 100vh;
+    width: 100%;
+    padding-left: 12vw;
+}
+
+.skills h2 {
+    color: #F0C562;
+}
+
+#skillsGrid {
+    display: grid;
+    grid-template-columns: 5vw 35vw 5vw 35vw;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 1.5vw;
+    align-items: center;
+    font-family: futura;
+    font-size: 2.5vw;
+    letter-spacing: 0.05em; 
+    margin-top: 2.5vw;
+}
+
+.fa-circle {
+    font-size: 1vw;
+}
+
+.work {
+    width: 100%;
+    padding-left: 12vw;
+    padding-bottom: 8vw;
+}
+
+#workGrid {
+    display: grid;
+    grid-template-columns: 35vw 38vw;
+    grid-template-rows: repeat(4, auto);
+    gap: 6vw;
+    align-items: center;
+    font-family: futura;
+    font-size: 1.75vw;
+    letter-spacing: 0.05em; 
+    margin-top: 2.5vw;
+}
+
+.webScreenshots img {
+    width: 35vw;
+    height: auto;
+    border: 5px solid #464646;
+}
+
+.mobileScreenshots {
+    width: 35vw;
+    text-align: center;
+}
+
+.mobileScreenshots img {
+    width: 12vw;
+    height: auto;
+    border: 5px solid #464646;
+}
+
+.hunnybee {
+    font-size: 1vw;
+}
+
+.getInTouch {
+    background-color: #F0C562;
+    height: 110vh;
+    width: 100%;
+    padding-left: 12vw;
+}
+
+#contactForm {
+    margin-top: 3vw;
+}
+
+input,
+textarea {
+    background: none;
+    border: 7px solid #464646;
+    width: 30vw;
+    height: 3vw;
+    margin-bottom: 2vw;
+    padding-left: 1vw;
+    font-family: futura;
+    font-size: 2vw;
+    color: #464646;
+}
+
+textarea {
+    height: 10vw;
+    padding-top: 1vw;
+    font-family: futura;
+    font-size: 2vw;
+    color: #464646;
+}
+
+.getInTouch button {
+    background: none;
+    border: 7px solid #464646;
+    height: 3vw;
+    width: 10vw;
+    font-family: futura;
+    font-size: 1.75vw;
+    color: #464646;
+    cursor: pointer;
+}
+
+::placeholder {
+    font-family: futura;
+    font-size: 2vw;
+    color: #464646;
+    opacity: 1;
+}
+
+.social {
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 3vw);
+    grid-template-rows: 3vw;
+    column-gap: 1vw;
+}
+
+.socialSquare {
+    border: 3px solid #464646;
+    font-size: 1.75vw;
+    text-align: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a,
+.social a:link,
+.social a:visited,
+.social a:hover, 
+.social a:active {
+    color: #464646;
+    text-decoration: none;
+}   
+
+.colophon {
+    font-family: futura;
+    font-size: smaller;
+    color: #464646;
+    margin-top: 3vw;
+}

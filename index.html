@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow"> 
+    <meta name="description" content="">
+    
+    <title>Dave Taylor</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+
+    <script src="https://kit.fontawesome.com/dd670f5ab2.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <div class="hero">
+
+      <i class="fas fa-bars hamburger"></i>
+
+      <nav>
+        <ul>
+          <li>What I Do</li>
+          <li>Skills</li>
+          <li>Work</li>
+          <li>Get In Touch</li>
+        </ul>
+      </nav>
+
+      <h1>Hi,<br/>I'm Dave.</h1>
+
+      <h2>I develop awesome websites</h2>
+
+      <div class="downArrow"><i class="fas fa-chevron-down"></i></div>
+    </div> <!-- .hero -->
+
+    <div class="whatIDo">
+      <h2>What I Do</h2>
+
+      <div id="whatIDoGrid">
+        <div><i class="fas fa-eye whatIDoIcons"></i></div>
+        <div>
+          <p>Work with web designers to bring their vision to life</p>
+        </div>
+        <div><i class="fas fa-code whatIDoIcons"></i></div>
+        <div>
+          <p>Design and develop databases and APIs for web applications</p>
+        </div>
+        <div><i class="fas fa-cloud whatIDoIcons"></i></div>
+        <div>
+          <p>Deploy static sites and web apps to hosting platforms</p>
+        </div>
+      </div> <!-- #whatIDoGrid -->
+
+    </div> <!-- .whatIDo -->
+
+    <div class="skills">
+      <h2>Skills</h2>
+
+      <div id="skillsGrid">
+        <div><i class="fas fa-circle"></i></div>
+        <div>HTML</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Python</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>CSS</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Flask</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>JavaScript</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Django</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>MySQL</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Linux</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>PostgreSQL</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Apache</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Git/GitHub</div>
+        <div><i class="fas fa-circle"></i></div>
+        <div>Nginx</div>
+      </div><!-- #skillsGrid -->
+    </div> <!-- .skills -->
+
+    <div class="work">
+      <h2>Work</h2>
+
+      <div id="workGrid">
+        <div class="webScreenshots"><a href="https://www.bostechusa.com" target="_blank"><img src="./images/bos.png" alt="BOS Technology Website" /></a></div>
+        <div>
+          <h3>BOS TECHNOLOGY</h3>
+          <h4>Industrial IoT</h4>
+          <p>Frontend: Developed with HTML/CSS/JS</p>
+
+          <p>Backend:  Web application API developed in Python         
+                        with Django, PostgreSQL, and hosted on   
+                        Amazon EC2
+          </p>
+
+          <p class="hunnybee">Web design by <a href="http://www.hunnybeemarketing.com" target="_blank">Hunnybee Marketing</a></p>
+        </div>
+
+        <div class="webScreenshots"><a href="https://www.planoramicusa.com" target="_blank"><img src="./images/planoramic.png" alt="Plan-O-Ramic Website" /></a></div>
+        <div>
+          <h3>PLAN-O-RAMIC</h3>
+          <h4>Design Studio</h4>
+          <p>Frontend: Developed with HTML/CSS/JS</p>
+
+          <p class="hunnybee">Web design by <a href="http://www.hunnybeemarketing.com" target="_blank">Hunnybee Marketing</a></p>
+        </div>
+
+        <div class="webScreenshots"><a href="http://www.hunnybeemarketing.com" target="_blank"><img src="./images/hunnybee.png" alt="Hunnybee Marketing Website" /></a></div>
+        <div>
+          <h3>HUNNYBEE MARKETING</h3>
+          <h4>Creative Agency</h4>
+          <p>Frontend: Developed with HTML/CSS/JS</p>
+
+          <p class="hunnybee">Web design by <a href="http://www.hunnybeemarketing.com" target="_blank">Hunnybee Marketing</a></p>
+        </div>
+
+        <div class="mobileScreenshots">
+          <img src="./images/carebit_caregiver.png" alt="Carebit Caregiver Dashboard" />
+          <img src="./images/carebit_caregivee.png" alt="Carebit Caregivee Dashboard" />
+        </div>
+        <div>
+          <h3>CAREBIT</h3>
+          <h4>Remote Caregiving App</h4>
+          <p>Backend:  Mobile application API developed in Python with Flask, 
+                       SQLAlchemy, MySQL, and hosted on
+                       DigitalOcean
+          </p>
+
+          <p class="hunnybee">UI/UX design and iOS development by <a href="https://zachshea.com/" target="_blank">Zach Shea</a></p>
+        </div>
+      </div> <!-- #workgrid -->
+    </div> <!-- .work -->
+
+    <div class="getInTouch">
+      <h2>Get In Touch</h2>
+
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Name"> <br />
+        <input type="email" name="email" placeholder="Email"> <br />
+        <textarea name="message" placeholder="Message"></textarea> <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="social">
+        <a href="https://www.linkedin.com/in/dave-taylor-04024b186/" target="_blank"><div class="socialSquare"><i class="fab fa-linkedin-in"></i></div></a>
+        <a href="https://www.instagram.com/davehtaylor/" target="_blank"><div class="socialSquare"><i class="fab fa-instagram"></i></div></a>
+        <a href="https://twitter.com/davehtaylor" target="_blank"><div class="socialSquare"><i class="fab fa-twitter"></i></div></a>
+        <a href="https://github.com/davehtaylor" target="_blank"><div class="socialSquare"><i class="fab fa-github"></i></div></a>
+      </div>
+
+      <div class="colophon">&copy; <script>document.write(new Date().getFullYear());</script> Dave Taylor</div>
+    </div> <!-- .getInTouch -->
+
+    <script src="./js/main.js"></script>
+    
+    </body>
+
+  </html>
