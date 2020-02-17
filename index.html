@@ -13,20 +13,23 @@
     <link rel="stylesheet" type="text/css" href="./css/layout.css" />
 
     <script src="https://kit.fontawesome.com/dd670f5ab2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script
   </head>
 
   <body>
 
     <div class="hero">
 
-      <i class="fas fa-bars hamburger"></i>
+      <i class="fas fa-bars hamburger" onclick="showHamburger();"></i>
 
       <nav>
+        <i class="fas fa-times hamburgerClose" onclick="dismissHamburger();"></i>
+
         <ul>
-          <li>What I Do</li>
-          <li>Skills</li>
-          <li>Work</li>
-          <li>Get In Touch</li>
+          <li><a href="#whatIDo" class="navLinks">WHAT I DO</a></li>
+          <li><a href="#skills" class="navLinks">SKILLS</a></li>
+          <li><a href="#work" class="navLinks">WORK</a></li>
+          <li><a href="#getInTouch" class="navLinks">GET IN TOUCH</a></li>
         </ul>
       </nav>
 
@@ -37,7 +40,7 @@
       <div class="downArrow"><i class="fas fa-chevron-down"></i></div>
     </div> <!-- .hero -->
 
-    <div class="whatIDo">
+    <div class="whatIDo" id="whatIDo">
       <h2>What I Do</h2>
 
       <div id="whatIDoGrid">
@@ -57,7 +60,7 @@
 
     </div> <!-- .whatIDo -->
 
-    <div class="skills">
+    <div class="skills" id="skills">
       <h2>Skills</h2>
 
       <div id="skillsGrid">
@@ -88,7 +91,7 @@
       </div><!-- #skillsGrid -->
     </div> <!-- .skills -->
 
-    <div class="work">
+    <div class="work" id="work">
       <h2>Work</h2>
 
       <div id="workGrid">
@@ -141,13 +144,14 @@
       </div> <!-- #workgrid -->
     </div> <!-- .work -->
 
-    <div class="getInTouch">
+    <div class="getInTouch" id="getInTouch">
       <h2>Get In Touch</h2>
 
       <form id="contactForm">
         <input type="text" name="name" placeholder="Name"> <br />
         <input type="email" name="email" placeholder="Email"> <br />
         <textarea name="message" placeholder="Message"></textarea> <br />
+        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
         <button type="submit">Submit</button>
       </form>
 
@@ -162,6 +166,16 @@
     </div> <!-- .getInTouch -->
 
     <script src="./js/main.js"></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdfcNkUAAAAAC8BsXB0Y9BzxW3v810gO8wvTyKF"></script>
+    <script>
+      grecaptcha.ready(function () {
+          grecaptcha.execute('6LdfcNkUAAAAAC8BsXB0Y9BzxW3v810gO8wvTyKF', { action: 'contact' }).then(function (token) {
+              var recaptchaResponse = document.getElementById('recaptchaResponse');
+              recaptchaResponse.value = token;
+          });
+      });
+    </script>
     
     </body>
 
