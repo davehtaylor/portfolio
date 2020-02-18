@@ -10,20 +10,21 @@
     
     <title>Dave Taylor</title>
     
-    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./css/layout.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 768px)" href="./css/mobile.css" />
 
     <script src="https://kit.fontawesome.com/dd670f5ab2.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
 
     <div class="hero">
 
-      <i class="fas fa-bars hamburger" onclick="showHamburger();"></i>
+      <i class="fas fa-bars hamburger" id="hamburger"></i>
 
       <nav>
-        <i class="fas fa-times hamburgerClose" onclick="dismissHamburger();"></i>
+        <i class="fas fa-times hamburgerClose" id="closeHamburger"></i>
 
         <ul>
           <li><a href="#whatIDo" class="navLinks">WHAT I DO</a></li>
@@ -37,7 +38,7 @@
 
       <h2>I develop awesome websites</h2>
 
-      <div class="downArrow"><i class="fas fa-chevron-down"></i></div>
+      <div class="downArrow"><a href="#whatIDo"><i class="fas fa-chevron-down"></a></i></div>
     </div> <!-- .hero -->
 
     <div class="whatIDo" id="whatIDo">
@@ -156,14 +157,26 @@
       </form>
 
       <div class="social">
-        <a href="https://www.linkedin.com/in/dave-taylor-04024b186/" target="_blank"><div class="socialSquare"><i class="fab fa-linkedin-in"></i></div></a>
-        <a href="https://www.instagram.com/davehtaylor/" target="_blank"><div class="socialSquare"><i class="fab fa-instagram"></i></div></a>
-        <a href="https://twitter.com/davehtaylor" target="_blank"><div class="socialSquare"><i class="fab fa-twitter"></i></div></a>
-        <a href="https://github.com/davehtaylor" target="_blank"><div class="socialSquare"><i class="fab fa-github"></i></div></a>
+        <div class="socialSquare"><a href="https://www.linkedin.com/in/dave-taylor-04024b186/" target="_blank"><i class="fab fa-linkedin-in"></i></a></div>
+        <div class="socialSquare"><a href="https://www.instagram.com/davehtaylor/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+        <div class="socialSquare"><a href="https://twitter.com/davehtaylor" target="_blank"><i class="fab fa-twitter"></i></a></div>
+        <div class="socialSquare"><a href="https://github.com/davehtaylor" target="_blank"><i class="fab fa-github"></i></a></div>
       </div>
 
       <div class="colophon">&copy; <script>document.write(new Date().getFullYear());</script> Dave Taylor</div>
     </div> <!-- .getInTouch -->
+
+    <div class="overlay">
+      <div class="thanks">
+        <h2>Thanks!</h2>
+
+        <h3>I'll be in touch soon</h3>
+
+        <button onclick="thanksOff();">Ok</button>
+      </div>
+    </div> <!-- .overlay -->
+
+    <div class="backToTop" onclick="backToTop();"><i class="fas fa-arrow-alt-circle-up"></i></div>
 
     <script src="./js/main.js"></script>
 

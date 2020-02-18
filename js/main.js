@@ -1,24 +1,70 @@
-function showHamburger() {
-    document.getElementsByTagName("nav")[0].style.display = "block";
+function thanks() {
+    document.getElementsByClassName("overlay")[0].style.display = "block";
+    console.log("Summoning thanks overlay");
 }
 
-function dismissHamburger() {
-    document.getElementsByTagName("nav")[0].style.display = "none";
+function thanksOff() {
+    document.getElementsByClassName("overlay")[0].style.display = "none";
+    console.log("Dismissing thanks overlay");
 }
+
+// Slide in and out the hamburger menu
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementsByTagName("nav")[0].style.right = '0'    
+});
+
+document.getElementById("closeHamburger").addEventListener("click", function() {
+    document.getElementsByTagName("nav")[0].style.right = '-30vw'    
+});
 
 // Dismiss the hamburger menu when we click one of the links
 let navLinks = document.getElementsByClassName("navLinks"); 
-
 for (var i = 0; i <  navLinks.length; i++) {
     navLinks[i].addEventListener("click", function() {
-        dismissHamburger();
+        document.getElementsByTagName("nav")[0].style.right = '-30vw'
     })
 }
+
+// Functions to handle the back to top button on the bottom right
+function scrollFunction() {
+    let BTTbutton = document.getElementsByClassName("backToTop")[0];
+
+    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+        BTTbutton.style.display = "block";
+    } else {
+        BTTbutton.style.display = "none";
+    }
+}
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function changeBTTarrowColor() {
+    let BTTbutton = document.getElementsByClassName("backToTop")[0];
+    let skills = document.getElementById("skills");
+
+    if (BTTbutton.getBoundingClientRect().top > skills.getBoundingClientRect().top &&
+        BTTbutton.getBoundingClientRect().bottom < skills.getBoundingClientRect().bottom) {
+
+        BTTbutton.style.color = "#F0C562";
+    }
+    else {
+        BTTbutton.style.color = "#464646";
+    }
+}
+
+window.addEventListener("scroll", function() {
+    scrollFunction();
+    changeBTTarrowColor();
+})
 
 $(document).ready(function() { 
     let request;
 
-    // AJAX methods for the find location form
+    // AJAX method for the contact form. Submit the form then put up a 
+    // thank you confirmation
     $("body").on("submit", $('#contactForm'), function(event) {
         event.preventDefault(); 
 
@@ -29,7 +75,7 @@ $(document).ready(function() {
         });
 
         request.done(function(data) {
-            // thanks(); 
+            thanks(); 
             $('#contactForm').trigger("reset");
             console.log("SUCCESS SUBMITTING LOCATION FORM");
         });

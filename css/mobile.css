@@ -1,4 +1,4 @@
-/* colors: 
+/* colors:
     F0C562  yellow
     464646  grey */
 
@@ -49,36 +49,35 @@
 
 html {
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body {
     background-color: #ffffff;
-    color: #464646; 
+    color: #464646;
     text-align: left;
     margin: 0;
     padding: 0;
 }
 
 .grecaptcha-badge{
-    visibility: collapse !important;  
+    visibility: collapse !important;
 }
 
 h1 {
     font-family: bookplate;
-    font-size: 8vw;
+    font-size: 12vw;
     color: #464646;
     margin: 0;
     padding: 0;
-    padding-top: 14vw;
+    padding-top: 30vw;
 }
 
 h2 {
     margin: 0;
     padding: 0;
-    padding-top: 8vw;
+    padding-top: 10vw;
     font-family: bookplate;
-    font-size: 4vw;
+    font-size: 8vw;
     color: #464646;
 }
 
@@ -97,9 +96,9 @@ a:link,
 a:visited {
     color: #F0C562;
     text-decoration: none;
-}   
+}
 
-a:hover, 
+a:hover,
 a:active {
     color: #F0C562;
     text-decoration: underline;
@@ -111,12 +110,12 @@ ul {
 }
 
 li {
-    
+
 }
 
 .hero {
     background-color: #F0C562;
-    height: 100vh;
+    height: 110vw;
     width: 100%;
     padding-left: 12vw;
 }
@@ -124,18 +123,15 @@ li {
 .hero h2 {
     padding: 0;
     margin: 0;
-}
-
-@media (max-height: 700px) {
-
+    font-size: 8vw;
 }
 
 .hero h1 {
-    -webkit-animation: fadeIn 2s; 
+    -webkit-animation: fadeIn 2s;
 }
 
 .hero h2 {
-    -webkit-animation: alsoFadeIn 4s; 
+    -webkit-animation: alsoFadeIn 4s;
 }
 
 @keyframes fadeIn {
@@ -152,91 +148,71 @@ li {
 .hamburger,
 .hamburgerClose {
     position: absolute;
-    top: 2vw;
-    right: 2vw;
-    font-size: 3vw;
+    top: 7vw;
+    right: 7vw;
+    font-size: 7vw;
     cursor: pointer;
+}
+
+.hamburgerClose {
 }
 
 nav {
     font-family: futura;
-    font-size: 3vw;
-    width: 30vw;
+    font-size: 8vw;
+    display: none;
+    width: 70vw;
     height: 100%;
     background-color: #464646;
     position: fixed;
     top: 0;
-    right: -30vw;
+    right: 0;
     color: #F0C562;
-    transition: 0.4s ease-in-out;
+    z-index: 2;
 }
 
 nav ul {
-    margin-left: 4vw;
-    margin-top: 5vw;
+    margin-left: 7vw;
+    margin-top: 20vw;
 }
 
 nav li {
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
 }
 
 .downArrow {
-    position: absolute;
-    font-size: 3vw;
-    bottom: 2vw;
-    left: 50%; 
-    animation: downArrowFadeIn 5s, bounce 1.5s infinite linear;
-    transform-origin: bottom;
-}
-
-.downArrow a,
-.downArrow a:link,
-.downArrow a:visited,
-.downArrow a:hover, 
-.downArrow a:active {
-    color: #464646;
-    text-decoration: none;
-}
-
-@keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-2vw); }
-    100% { transform: translateY(0); }
-}
-
-@keyframes downArrowFadeIn {
-    0%   { opacity: 0; }
-    30%  { opacity: 0; }
-    100% { opacity: 1; }
+    display: none;
 }
 
 .whatIDo {
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding-left: 12vw;
+    padding-bottom: 8vw;
 }
 
 .whatIDoIcons {
-    font-size: 3.5vw;
+    font-size: 8vw;
 }
 
 #whatIDoGrid {
     display: grid;
-    grid-template-columns: 8vw 65vw;
+    grid-template-columns: 16vw 60vw;
     grid-template-rows: repeat(3, auto);
     align-items: center;
     font-family: futura;
     font-weight: bold;
-    font-size: 2.5vw;
+    font-size: 5vw;
     margin-top: 1vw;
 }
 
 .skills {
     background-color: #464646;
     color: #F0C562;
-    height: 100vh;
+    height: auto;
     width: 100%;
     padding-left: 12vw;
+    padding-bottom: 8vw;
 }
 
 .skills h2 {
@@ -245,18 +221,18 @@ nav li {
 
 #skillsGrid {
     display: grid;
-    grid-template-columns: 5vw 35vw 5vw 35vw;
+    grid-template-columns: 5vw 40vw 5vw 35vw;
     grid-template-rows: repeat(6, auto);
-    row-gap: 1.5vw;
+    row-gap: 3vw;
     align-items: center;
     font-family: futura;
-    font-size: 2.5vw;
-    letter-spacing: 0.05em; 
+    font-size: 5vw;
+    letter-spacing: 0.05em;
     margin-top: 2.5vw;
 }
 
 .fa-circle {
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 .work {
@@ -267,43 +243,45 @@ nav li {
 
 #workGrid {
     display: grid;
-    grid-template-columns: 35vw 38vw;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
     gap: 6vw;
     align-items: center;
     font-family: futura;
-    font-size: 1.75vw;
-    letter-spacing: 0.05em; 
-    margin-top: 2.5vw;
+    font-size: 4vw;
+    letter-spacing: 0.05em;
+    margin-top: 5vw;
+}
+
+#workGrid p {
+    max-width: 70vw;
 }
 
 .webScreenshots img {
-    width: 35vw;
+    width: 70vw;
     height: auto;
-    border: 0.3vw solid #464646;
+    border: 2px solid #464646;
 }
 
 .mobileScreenshots {
-    width: 35vw;
-    text-align: center;
+    width: 70vw;
 }
 
 .mobileScreenshots img {
-    width: 12vw;
+    width: 24vw;
     height: auto;
-    border: 0.3vw solid #464646;
+    border: 2px solid #464646;
 }
 
 .hunnybee {
-    font-size: 1vw;
+    font-size: 3vw;
 }
 
 .getInTouch {
     background-color: #F0C562;
     height: auto;
     width: 100%;
-    padding-bottom: 4vw;
     padding-left: 12vw;
+    padding-bottom: 8vw;
 }
 
 #contactForm {
@@ -313,58 +291,54 @@ nav li {
 input,
 textarea {
     background: none;
-    border: 0.4vw solid #464646;
-    width: 30vw;
-    height: 3vw;
-    margin-bottom: 2vw;
+    border: 3px solid #464646;
+    border-radius: 0;
+    width: 70vw;
+    height: 7vw;
+    margin-bottom: 4vw;
     padding-left: 1vw;
     font-family: futura;
-    font-size: 2vw;
+    font-size: 5vw;
     color: #464646;
 }
 
 textarea {
-    height: 10vw;
+    height: 15vw;
     padding-top: 1vw;
     font-family: futura;
-    font-size: 2vw;
+    font-size: 5vw;
     color: #464646;
 }
 
 .getInTouch button {
     background: none;
-    border: 0.4vw solid #464646;
-    height: 3.5vw;
-    width: 10vw;
+    border: 3px solid #464646;
+    height: 12vw;
+    width: 30vw;
     font-family: futura;
-    font-size: 1.75vw;
+    font-size: 5vw;
     color: #464646;
     cursor: pointer;
 }
 
-.getInTouch button:hover {
-    background-color: #464646;
-    color: #F0C562;
-}
-
 ::placeholder {
     font-family: futura;
-    font-size: 2vw;
+    font-size: 5vw;
     color: #464646;
     opacity: 1;
 }
 
 .social {
-    margin-top: 2vw;
+    margin-top: 4vw;
     display: grid;
-    grid-template-columns: repeat(4, 3vw);
-    grid-template-rows: 3vw;
-    column-gap: 1vw;
+    grid-template-columns: repeat(4, 6vw);
+    grid-template-rows: 6vw;
+    column-gap: 5vw;
 }
 
 .socialSquare {
-    border: 0.25vw solid #464646;
-    font-size: 1.75vw;
+    border: 3px solid #464646;
+    font-size: 3vw;
     text-align: center;
     cursor: pointer;
     height: 100%;
@@ -374,26 +348,12 @@ textarea {
     justify-content: center;
 }
 
-.socialSquare:hover {
-    background-color: #464646;
-    font-size: 1.75vw;
-}
-
 .social a,
 .social a:link,
 .social a:visited,
-.social a:hover, 
+.social a:hover,
 .social a:active {
     color: #464646;
-    text-decoration: none;
-}   
-
-.socialSquare:hover a,
-.socialSquare:hover a:link,
-.socialSquare:hover a:visited,
-.socialSquare:hover a:hover, 
-.socialSquare:hover a:active {
-    color: #F0C562;
     text-decoration: none;
 }
 
@@ -401,71 +361,5 @@ textarea {
     font-family: futura;
     font-size: smaller;
     color: #464646;
-    margin-top: 3vw;
-}
-
-.overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    text-align: center;
-    padding-top: 8vw;
-}
-
-.thanks {
-    width: 25vw;
-    height: auto;
-    background-color: #F0C562;
-    margin: auto;
-    padding: 3vw 2vw;
-    color: #464646;
-    font-size: 2vw;
-}
-
-.thanks h2 {
-    font-family: futura;
-    padding: 0;
-}
-
-.thanks h3 {
-    font-family: futura;
-    font-weight: normal;
-}
-
-.thanks button {
-    background: none;
-    border: 0.4vw solid #464646;
-    height: 3vw;
-    width: 6vw;
-    font-family: futura;
-    font-size: 1.75vw;
-    color: #464646;
-    cursor: pointer;
-    margin-top: 2vw;
-}
-
-.thanks button:hover {
-    background-color: #464646;
-    color: #F0C562;
-}
-
-.backToTop {
-    display: none;
-    position: fixed;
-    bottom: 6.5vw;
-    right: 2vw;
-    z-index: 99;
-    font-size: 3vw;
-    color: #464646;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
+    margin-top: 4vw;
 }
