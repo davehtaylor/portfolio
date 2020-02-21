@@ -10,18 +10,29 @@ function thanksOff() {
 
 // Slide in and out the hamburger menu
 document.getElementById("hamburger").addEventListener("click", function() {
-    document.getElementsByTagName("nav")[0].style.right = '0'    
+    document.getElementsByTagName("nav")[0].style.right = '0';    
 });
 
 document.getElementById("closeHamburger").addEventListener("click", function() {
-    document.getElementsByTagName("nav")[0].style.right = '-30vw'    
+    if (window.innerWidth > 480) {
+        document.getElementsByTagName("nav")[0].style.right = '-30vw';
+    }
+    else {
+        document.getElementsByTagName("nav")[0].style.right = '-70vw';
+    }
+        
 });
 
 // Dismiss the hamburger menu when we click one of the links
 let navLinks = document.getElementsByClassName("navLinks"); 
 for (var i = 0; i <  navLinks.length; i++) {
     navLinks[i].addEventListener("click", function() {
-        document.getElementsByTagName("nav")[0].style.right = '-30vw'
+        if (window.innerWidth > 480) {
+            document.getElementsByTagName("nav")[0].style.right = '-30vw';
+        }
+        else {
+            document.getElementsByTagName("nav")[0].style.right = '-70vw';
+        }
     })
 }
 
