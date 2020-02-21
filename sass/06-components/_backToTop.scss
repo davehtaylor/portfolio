@@ -11,3 +11,9 @@
     background: transparent;
     cursor: pointer;
 }
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    .backToTop {
+        display: none;
+    }
+}

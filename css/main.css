@@ -161,6 +161,11 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .backToTop {
+    display: none;
+  }
+}
 .getInTouch {
   background-color: #F0C562;
   height: auto;
@@ -474,6 +479,20 @@ nav li {
   color: #F0C562;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .overlay {
+    padding-top: 50vw;
+  }
+
+  .thanks {
+    width: 60vw;
+  }
+
+  .thanks button {
+    height: 7vw;
+    width: 10vw;
+  }
+}
 .grecaptcha-badge {
   visibility: collapse !important;
 }
@@ -595,7 +614,7 @@ nav li {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #workGrid {
-    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     gap: 6vw;
     font-size: 4vw;
@@ -615,6 +634,7 @@ nav li {
 
   .mobileScreenshots {
     width: 70vw;
+    text-align: left;
   }
 
   .mobileScreenshots img {

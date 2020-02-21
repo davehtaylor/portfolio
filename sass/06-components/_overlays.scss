@@ -51,4 +51,16 @@
 }
 
 @media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    .overlay {
+        padding-top: 50vw;
+    }
+
+    .thanks {
+        width: 60vw;
+    }
+
+    .thanks button {
+        height: 7vw;
+        width: 10vw;
+    }
 }
