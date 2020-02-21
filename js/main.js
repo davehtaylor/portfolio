@@ -14,7 +14,7 @@ document.getElementById("hamburger").addEventListener("click", function() {
 });
 
 document.getElementById("closeHamburger").addEventListener("click", function() {
-    if (document.body.clientWidth > 480) {
+    if ($(window).width() > 480) {
         document.getElementsByTagName("nav")[0].style.right = '-30vw';
     }
     else {
@@ -27,7 +27,7 @@ document.getElementById("closeHamburger").addEventListener("click", function() {
 let navLinks = document.getElementsByClassName("navLinks"); 
 for (var i = 0; i <  navLinks.length; i++) {
     navLinks[i].addEventListener("click", function() {
-        if (document.body.clientWidth > 480) {
+        if ($(window).width() > 480) {
             document.getElementsByTagName("nav")[0].style.right = '-30vw';
         }
         else {
