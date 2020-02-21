@@ -2,6 +2,7 @@
     background-color: $yellow;
     @extend %full-height-full-width;
     padding-left: 12vw;
+    position: relative;
 }
 
 .hero h1 {

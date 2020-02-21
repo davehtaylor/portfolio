@@ -1,4 +1,5 @@
 %full-height-full-width {
     height: 100vh;
-    width: 100%;
+    width: 100vw - 12vw;
+    /* Have to account for the 12vw left padding on all the section divs */
 }

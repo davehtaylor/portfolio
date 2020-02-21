@@ -53,7 +53,8 @@
 
 .whatIDo, .skills, .hero {
   height: 100vh;
-  width: 100%;
+  width: 88vw;
+  /* Have to account for the 12vw left padding on all the section divs */
 }
 
 input,
@@ -294,6 +295,7 @@ textarea {
 .hero {
   background-color: #F0C562;
   padding-left: 12vw;
+  position: relative;
 }
 
 .hero h1 {
@@ -503,7 +505,7 @@ nav li {
   .thanks button {
     height: 7vw;
     width: 10vw;
-    font-size: 2em;
+    font-size: 3.5vw;
   }
 }
 .grecaptcha-badge {
