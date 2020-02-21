@@ -145,6 +145,8 @@ html {
 body {
   color: #464646;
   text-align: left;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .backToTop {

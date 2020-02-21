@@ -6,5 +6,7 @@ html {
 body {
     color: $gray; 
     text-align: left;
+    overflow-x: hidden;
+    position: relative;
     @extend %padding-and-margin-reset;
 }
