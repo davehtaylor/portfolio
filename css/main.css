@@ -67,6 +67,10 @@ textarea {
   font-family: futura;
   font-size: 2vw;
   color: #464646;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 textarea {
@@ -84,6 +88,12 @@ textarea {
   opacity: 1;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  input,
+textarea {
+    border: 0.75vw solid #464646;
+  }
+}
 h1 {
   font-family: bookplate;
   padding-top: 14vw;
@@ -251,6 +261,7 @@ textarea {
     height: 12vw;
     width: 30vw;
     font-size: 5vw;
+    border: 0.75vw solid #464646;
   }
 
   ::placeholder {
@@ -259,13 +270,14 @@ textarea {
 
   .social {
     margin-top: 4vw;
-    grid-template-columns: repeat(4, 6vw);
-    grid-template-rows: 6vw;
+    grid-template-columns: repeat(4, 8vw);
+    grid-template-rows: 8vw;
     column-gap: 5vw;
   }
 
   .socialSquare {
-    font-size: 3vw;
+    border: 0.75vw solid #464646;
+    font-size: 4vw;
   }
 
   .colophon {

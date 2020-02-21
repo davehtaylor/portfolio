@@ -98,6 +98,7 @@
         height: 12vw;
         width: 30vw;
         font-size: 5vw;
+        border: 0.75vw solid $gray;
     }
 
     ::placeholder {
@@ -106,13 +107,14 @@
 
     .social {
         margin-top: 4vw;
-        grid-template-columns: repeat(4, 6vw);
-        grid-template-rows: 6vw;
+        grid-template-columns: repeat(4, 8vw);
+        grid-template-rows: 8vw;
         column-gap: 5vw;
     }
 
     .socialSquare {
-        font-size: 3vw;
+        border: 0.75vw solid $gray;
+        font-size: 4vw;
     }
 
     .colophon {

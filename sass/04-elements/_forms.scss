@@ -9,6 +9,10 @@ textarea {
     font-family: futura;
     font-size: 2vw;
     color: $gray;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 textarea {
@@ -24,4 +28,11 @@ textarea {
     font-size: 2vw;
     color: $gray;
     opacity: 1;
+}
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    input,
+    textarea {
+        border: 0.75vw solid $gray;
+    }
 }
