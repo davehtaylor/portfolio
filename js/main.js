@@ -67,8 +67,10 @@ function changeBTTarrowColor() {
 }
 
 window.addEventListener("scroll", function() {
-    scrollFunction();
-    changeBTTarrowColor();
+    if (window.innerWidth > 480) {
+        scrollFunction();
+        changeBTTarrowColor();
+    }
 })
 
 $(document).ready(function() { 

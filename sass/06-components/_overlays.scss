@@ -56,11 +56,22 @@
     }
 
     .thanks {
-        width: 60vw;
+        width: 70vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .thanks h2 {
+        font-size: 4em;
+    }
+
+    .thanks h3 {
+        font-size: 3em;
     }
 
     .thanks button {
         height: 7vw;
         width: 10vw;
+        font-size: 2em;
     }
 }
