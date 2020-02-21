@@ -1,0 +1,126 @@
+.hero {
+    background-color: $yellow;
+    @extend %full-height-full-width;
+    padding-left: 12vw;
+}
+
+.hero h1 {
+    -webkit-animation: fadeIn 2s; 
+}
+
+.hero h2 {
+    -webkit-animation: alsoFadeIn 4s; 
+}
+
+.hero h2 {
+    @extend %padding-and-margin-reset;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes alsoFadeIn {
+    0%   { opacity: 0; }
+    30%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.hamburger,
+.hamburgerClose {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+nav {
+    font-family: futura;
+    font-size: 3vw;
+    width: 30vw;
+    height: 100%;
+    background-color: $gray;
+    position: fixed;
+    top: 0;
+    right: -30vw;
+    color: $yellow;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul {
+    margin-left: 4vw;
+    margin-top: 5vw;
+}
+
+nav li {
+    margin-bottom: 1vw;
+}
+
+.downArrow {
+    position: absolute;
+    font-size: 3vw;
+    bottom: 2vw;
+    left: 50%; 
+    animation: downArrowFadeIn 5s, bounce 1.5s infinite linear;
+    transform-origin: bottom;
+}
+
+.downArrow a,
+.downArrow a:link,
+.downArrow a:visited,
+.downArrow a:hover, 
+.downArrow a:active {
+    color: $gray;
+    text-decoration: none;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-2vw); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes downArrowFadeIn {
+    0%   { opacity: 0; }
+    30%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    .hero {
+        height: 110vw;
+    }
+
+    .hero h2 {
+        font-size: 8vw;
+    }    
+
+    .hamburger,
+    .hamburgerClose {
+        top: 7vw;
+        right: 7vw;
+        font-size: 7vw;
+    }
+
+    nav {
+        font-size: 8vw;
+        width: 70vw;
+        right: -70vw;
+    }
+
+    nav ul {
+        margin-left: 7vw;
+        margin-top: 20vw;
+    }
+
+    nav li {
+        margin-bottom: 5vw;
+    }
+
+    .downArrow {
+        display: none;
+    }
+}

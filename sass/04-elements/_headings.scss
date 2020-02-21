@@ -1,0 +1,35 @@
+h1 {
+    font-family: bookplate;
+    @extend %padding-and-margin-reset;
+    padding-top: 14vw;
+    font-size: 8vw;
+    color: $gray;
+}
+
+h2 {
+    font-family: bookplate;
+    @extend %padding-and-margin-reset;
+    padding-top: 8vw;
+    font-size: 4vw;
+    color: $gray;
+}
+
+h3 {
+    @extend %padding-and-margin-reset;
+}
+
+h4 {
+    @extend %padding-and-margin-reset;
+}
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    h1 {
+        font-size: 12vw;
+        padding-top: 30vw;
+    }
+
+    h2 {
+        padding-top: 10vw;
+        font-size: 8vw;
+    }
+}

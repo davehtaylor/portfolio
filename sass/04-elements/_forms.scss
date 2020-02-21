@@ -1,0 +1,27 @@
+input,
+textarea {
+    background: none;
+    border: 0.4vw solid $gray;
+    width: 30vw;
+    height: 3vw;
+    margin-bottom: 2vw;
+    padding-left: 1vw;
+    font-family: futura;
+    font-size: 2vw;
+    color: $gray;
+}
+
+textarea {
+    height: 10vw;
+    padding-top: 1vw;
+    font-family: futura;
+    font-size: 2vw;
+    color: $gray;
+}
+
+::placeholder {
+    font-family: futura;
+    font-size: 2vw;
+    color: $gray;
+    opacity: 1;
+}

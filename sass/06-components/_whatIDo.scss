@@ -1,0 +1,36 @@
+.whatIDo {
+    @extend %full-height-full-width;
+    padding-left: 12vw;
+}
+
+.whatIDoIcons {
+    font-size: 3.5vw;
+}
+
+#whatIDoGrid {
+    display: grid;
+    grid-template-columns: 8vw 65vw;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    font-family: futura;
+    font-weight: bold;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+}
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    .whatIDo {
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    .whatIDoIcons {
+        font-size: 8vw;
+    }
+
+    #whatIDoGrid {
+        grid-template-columns: 16vw 60vw;
+        font-size: 5vw;
+    }
+}
+

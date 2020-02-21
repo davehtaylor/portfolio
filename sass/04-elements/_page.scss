@@ -1,0 +1,10 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $gray; 
+    text-align: left;
+    @extend %padding-and-margin-reset;
+}

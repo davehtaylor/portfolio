@@ -1,0 +1,73 @@
+.work {
+    width: 100%;
+    padding-left: 12vw;
+    padding-bottom: 8vw;
+}
+
+#workGrid {
+    display: grid;
+    grid-template-columns: 35vw 38vw;
+    grid-template-rows: repeat(4, auto);
+    gap: 6vw;
+    align-items: center;
+    font-family: futura;
+    font-size: 1.75vw;
+    letter-spacing: 0.05em; 
+    margin-top: 2.5vw;
+}
+
+.webScreenshots img {
+    width: 35vw;
+    height: auto;
+    border: 0.3vw solid $gray;
+}
+
+.mobileScreenshots {
+    width: 35vw;
+    text-align: center;
+}
+
+.mobileScreenshots img {
+    width: 12vw;
+    height: auto;
+    border: 0.3vw solid $gray;
+}
+
+.hunnybee {
+    font-size: 1vw;
+}
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    #workGrid {
+        display: grid;
+        grid-template-rows: repeat(8, auto);
+        gap: 6vw;
+        font-size: 4vw;
+        letter-spacing: 0.05em;
+        margin-top: 5vw;
+    }
+
+    #workGrid p {
+        max-width: 70vw;
+    }
+
+    .webScreenshots img {
+        width: 70vw;
+        height: auto;
+        border: 2px solid #464646;
+    }
+
+    .mobileScreenshots {
+        width: 70vw;
+    }
+
+    .mobileScreenshots img {
+        width: 24vw;
+        height: auto;
+        border: 2px solid #464646;
+    }
+
+    .hunnybee {
+        font-size: 3vw;
+    }
+}    

@@ -1,0 +1,43 @@
+.skills {
+    background-color: $gray;
+    color: $yellow;
+    @extend %full-height-full-width;
+    padding-left: 12vw;
+}
+
+.skills h2 {
+    color: $yellow;
+}
+
+#skillsGrid {
+    display: grid;
+    grid-template-columns: 5vw 35vw 5vw 35vw;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 1.5vw;
+    align-items: center;
+    font-family: futura;
+    font-size: 2.5vw;
+    letter-spacing: 0.05em; 
+    margin-top: 2.5vw;
+}
+
+.fa-circle {
+    font-size: 1vw;
+}
+
+@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+    .skills {
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    #skillsGrid {
+        grid-template-columns: 5vw 40vw 5vw 35vw;
+        row-gap: 3vw;
+        font-size: 5vw;
+    }
+
+    .fa-circle {
+        font-size: 2vw;
+    }
+}
