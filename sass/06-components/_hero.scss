@@ -90,7 +90,7 @@ nav li {
 }
 
 
-@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
     .hero {
         height: 110vw;
     }

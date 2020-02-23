@@ -18,7 +18,7 @@
     margin-top: 1vw;
 }
 
-@media only screen and (min-device-width : $smartphone-breakpoint-landscape) and (max-device-width : $smartphone-breakpoint-portrait) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
     .whatIDo {
         height: auto;
         padding-bottom: 8vw;
