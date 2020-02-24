@@ -37,7 +37,9 @@
     font-size: 1vw;
 }
 
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: portrait) {
     #workGrid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, auto);
@@ -72,3 +74,31 @@
         font-size: 3vw;
     }
 }    
+
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: landscape) {
+    #workGrid p {
+        max-width: 30vw;
+    }
+
+    .hunnybee {
+        font-size: 1.5vw;
+    }
+
+    .mobileScreenshots img {
+        width: 16.5vw;
+    }
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: portrait) {
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: landscape) {
+
+}

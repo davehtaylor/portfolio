@@ -25,7 +25,9 @@
     font-size: 1vw;
 }
 
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: portrait) {
     .skills {
         height: auto;
         padding-bottom: 8vw;
@@ -40,4 +42,36 @@
     .fa-circle {
         font-size: 2vw;
     }
+}
+
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: landscape) {
+    .skills {
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    #skillsGrid {
+        grid-template-columns: 5vw 35vw 5vw 35vw;
+        row-gap: 3vw;
+        font-size: 3vw;
+    }
+
+    .fa-circle {
+        font-size: 1.5vw;
+    }
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: portrait) {
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: landscape) {
+
 }

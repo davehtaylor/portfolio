@@ -76,7 +76,9 @@
     margin-top: 3vw;
 }
 
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: portrait) {
     .getInTouch {
         padding-bottom: 8vw;
     }
@@ -120,4 +122,57 @@
     .colophon {
         margin-top: 5vw;
     }
+}
+
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: landscape) {
+    .getInTouch {
+        padding-bottom: 8vw;
+    }
+
+    input,
+    textarea {
+        width: 40vw;
+        border: 0.5vw solid $gray;
+    }
+
+    textarea {
+        height: 15vw;
+    }
+
+    .getInTouch button {
+        height: 7vw;
+        width: 24vw;
+        font-size: 3vw;
+        border: 0.5vw solid $gray;
+    }
+
+    .social {
+        margin-top: 4vw;
+        grid-template-columns: repeat(4, 7vw);
+        grid-template-rows: 7vw;
+        column-gap: 3vw;
+    }
+
+    .socialSquare {
+        border: 0.5vw solid $gray;
+        font-size: 4vw;
+    }
+
+    .colophon {
+        margin-top: 5vw;
+    }
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: portrait) {
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: landscape) {
+
 }    

@@ -67,13 +67,17 @@ function changeBTTarrowColor() {
 }
 
 window.addEventListener("scroll", function() {
-    if (document.documentElement.clientWidth >= 480) {
+    if (document.documentElement.clientWidth > 768 && 
+        document.documentElement.clientHeight > 480) {
         scrollFunction();
         changeBTTarrowColor();
     }
 })
 
 $(document).ready(function() { 
+    // :)
+    console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDD\nD                           D\nD     dDDDDDDDDDDDDDD       D\nD      dD           dD      D\nD      dD            DD     D\nD      dD             DD    D\nD      dD             DD    D\nD      dD            DD     D\nD      dD          dD       D\nD     dDDDDDDDDDDDDD        D\nD                           D\nDDDDDDDDDDDDDDDDDDDDDDDDDDDDD\n\n\n IT'S DANGEROUS TO GO ALONE!\n          TAKE ME.\n\n          D\n          A\n          V\n          E\n         ___\n          |\n          d DD\n          dDDDDd\n           DDDD\n           DDDD\n           d  d\n\nIf you're looking for a developer\nfor your next web project, give me\na shout: davehtaylor@me.com ");
+
     let request;
 
     // AJAX method for the contact form. Submit the form then put up a 

@@ -18,7 +18,9 @@
     margin-top: 1vw;
 }
 
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: portrait) {
     .whatIDo {
         height: auto;
         padding-bottom: 8vw;
@@ -34,3 +36,33 @@
     }
 }
 
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: landscape) {
+    .whatIDo {
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    .whatIDoIcons {
+        font-size: 5vw;
+    }
+
+    #whatIDoGrid {
+        grid-template-columns: 10vw 60vw;
+        // font-size: 5vw;
+    }
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: portrait) {
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: landscape) {
+
+}

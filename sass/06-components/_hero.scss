@@ -90,7 +90,9 @@ nav li {
 }
 
 
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) and (max-device-width: $smartphone-breakpoint-landscape) {
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: portrait) {
     .hero {
         height: 110vw;
     }
@@ -124,4 +126,51 @@ nav li {
     .downArrow {
         display: none;
     }
+}
+
+@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
+        and (max-device-height: $smartphone-breakpoint-landscape) 
+        and (orientation: landscape) {
+
+    .hero {
+        height: auto;
+        padding-bottom: 8vw;
+    }
+
+    .hamburger,
+    .hamburgerClose {
+        top: 3vw;
+        right: 3vw;
+        font-size: 5vw;
+    }
+
+    .hamburgerClose {
+        right: 3vw;
+    }
+
+    .downArrow {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: 4vw;
+        margin-top: 9vw;
+    }
+
+    nav li {
+        margin-bottom: 4vw;
+    }
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: portrait) {
+
+}
+
+@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
+        and (max-device-height: $tablet-breakpoint-landscape) 
+        and (orientation: landscape) {
+
 }

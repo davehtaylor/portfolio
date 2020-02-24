@@ -89,7 +89,7 @@ textarea {
   opacity: 1;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   input,
 textarea {
     border: 0.75vw solid #464646;
@@ -109,7 +109,7 @@ h2 {
   color: #464646;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   h1 {
     font-size: 12vw;
     padding-top: 30vw;
@@ -164,7 +164,7 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .backToTop {
     display: none;
   }
@@ -247,7 +247,7 @@ body {
   margin-top: 3vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .getInTouch {
     padding-bottom: 8vw;
   }
@@ -286,6 +286,44 @@ textarea {
   .socialSquare {
     border: 0.75vw solid #464646;
     font-size: 5vw;
+  }
+
+  .colophon {
+    margin-top: 5vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  .getInTouch {
+    padding-bottom: 8vw;
+  }
+
+  input,
+textarea {
+    width: 40vw;
+    border: 0.5vw solid #464646;
+  }
+
+  textarea {
+    height: 15vw;
+  }
+
+  .getInTouch button {
+    height: 7vw;
+    width: 24vw;
+    font-size: 3vw;
+    border: 0.5vw solid #464646;
+  }
+
+  .social {
+    margin-top: 4vw;
+    grid-template-columns: repeat(4, 7vw);
+    grid-template-rows: 7vw;
+    column-gap: 3vw;
+  }
+
+  .socialSquare {
+    border: 0.5vw solid #464646;
+    font-size: 4vw;
   }
 
   .colophon {
@@ -396,7 +434,7 @@ nav li {
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .hero {
     height: 110vw;
   }
@@ -429,6 +467,36 @@ nav li {
 
   .downArrow {
     display: none;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  .hamburger,
+.hamburgerClose {
+    top: 3vw;
+    right: 3vw;
+    font-size: 5vw;
+  }
+
+  .hamburgerClose {
+    right: 3vw;
+  }
+
+  .downArrow {
+    display: none;
+  }
+
+  nav ul {
+    margin-left: 4vw;
+    margin-top: 9vw;
+  }
+
+  nav li {
+    margin-bottom: 4vw;
   }
 }
 .overlay {
@@ -476,6 +544,7 @@ nav li {
   color: #464646;
   cursor: pointer;
   margin-top: 2vw;
+  text-align: center;
 }
 
 .thanks button:hover {
@@ -483,7 +552,7 @@ nav li {
   color: #F0C562;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .overlay {
     padding-top: 50vw;
   }
@@ -538,7 +607,7 @@ nav li {
   font-size: 1vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .skills {
     height: auto;
     padding-bottom: 8vw;
@@ -552,6 +621,22 @@ nav li {
 
   .fa-circle {
     font-size: 2vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  .skills {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  #skillsGrid {
+    grid-template-columns: 5vw 35vw 5vw 35vw;
+    row-gap: 3vw;
+    font-size: 3vw;
+  }
+
+  .fa-circle {
+    font-size: 1.5vw;
   }
 }
 .whatIDo {
@@ -573,7 +658,7 @@ nav li {
   margin-top: 1vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .whatIDo {
     height: auto;
     padding-bottom: 8vw;
@@ -586,6 +671,20 @@ nav li {
   #whatIDoGrid {
     grid-template-columns: 16vw 60vw;
     font-size: 5vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  .whatIDo {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  .whatIDoIcons {
+    font-size: 5vw;
+  }
+
+  #whatIDoGrid {
+    grid-template-columns: 10vw 60vw;
   }
 }
 .work {
@@ -627,7 +726,7 @@ nav li {
   font-size: 1vw;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   #workGrid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
@@ -660,6 +759,19 @@ nav li {
 
   .hunnybee {
     font-size: 3vw;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  #workGrid p {
+    max-width: 30vw;
+  }
+
+  .hunnybee {
+    font-size: 1.5vw;
+  }
+
+  .mobileScreenshots img {
+    width: 16.5vw;
   }
 }
 
