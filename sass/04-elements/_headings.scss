@@ -35,21 +35,3 @@ h4 {
         font-size: 8vw;
     }
 }
-
-@media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
-        and (max-device-height: $smartphone-breakpoint-landscape) 
-        and (orientation: landscape) {
-
-}
-
-@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
-        and (max-device-height: $tablet-breakpoint-landscape) 
-        and (orientation: portrait) {
-
-}
-
-@media only screen and (min-device-width: $tablet-breakpoint-portrait) 
-        and (max-device-height: $tablet-breakpoint-landscape) 
-        and (orientation: landscape) {
-
-}

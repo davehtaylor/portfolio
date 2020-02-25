@@ -50,7 +50,6 @@
 
     #whatIDoGrid {
         grid-template-columns: 10vw 60vw;
-        // font-size: 5vw;
     }
 
 }
@@ -58,11 +57,35 @@
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: portrait) {
+    .whatIDo {
+        height: auto;
+        padding-bottom: 8vw;
+    }
 
+    .whatIDoIcons {
+        font-size: 5.5vw;
+    }
+
+    #whatIDoGrid {
+        grid-template-columns: 10vw 60vw;
+        font-size: 3vw;
+    }
 }
 
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: landscape) {
+    .whatIDo {
+        height: auto;
+        padding-bottom: 8vw;
+    }
 
+    .whatIDoIcons {
+        font-size: 5.5vw;
+    }
+
+    #whatIDoGrid {
+        grid-template-columns: 10vw 60vw;
+        font-size: 3vw;
+    }
 }

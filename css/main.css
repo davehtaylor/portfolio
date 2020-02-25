@@ -54,7 +54,6 @@
 .whatIDo, .skills, .hero {
   height: 100vh;
   width: 88vw;
-  /* Have to account for the 12vw left padding on all the section divs */
 }
 
 input,
@@ -164,9 +163,9 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
   .backToTop {
-    display: none;
+    font-size: 5vw;
   }
 }
 .getInTouch {
@@ -324,6 +323,82 @@ textarea {
   .socialSquare {
     border: 0.5vw solid #464646;
     font-size: 4vw;
+  }
+
+  .colophon {
+    margin-top: 5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .getInTouch {
+    padding-bottom: 8vw;
+  }
+
+  input,
+textarea {
+    width: 40vw;
+    border: 0.5vw solid #464646;
+  }
+
+  textarea {
+    height: 15vw;
+  }
+
+  .getInTouch button {
+    height: 6vw;
+    width: 24vw;
+    font-size: 3vw;
+    border: 0.5vw solid #464646;
+  }
+
+  .social {
+    margin-top: 4vw;
+    grid-template-columns: repeat(4, 7vw);
+    grid-template-rows: 7vw;
+    column-gap: 3vw;
+  }
+
+  .socialSquare {
+    border: 0.5vw solid #464646;
+    font-size: 4vw;
+  }
+
+  .colophon {
+    margin-top: 5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  .getInTouch {
+    padding-bottom: 8vw;
+  }
+
+  input,
+textarea {
+    width: 40vw;
+    border: 0.4vw solid #464646;
+  }
+
+  textarea {
+    height: 15vw;
+  }
+
+  .getInTouch button {
+    height: 6vw;
+    width: 24vw;
+    font-size: 3vw;
+    border: 0.4vw solid #464646;
+  }
+
+  .social {
+    margin-top: 4vw;
+    grid-template-columns: repeat(4, 6vw);
+    grid-template-rows: 6vw;
+    column-gap: 3vw;
+  }
+
+  .socialSquare {
+    border: 0.4vw solid #464646;
+    font-size: 3vw;
   }
 
   .colophon {
@@ -499,6 +574,44 @@ nav li {
     margin-bottom: 4vw;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .hero {
+    height: 65vw;
+  }
+
+  .hero h1 {
+    padding-top: 20vw;
+  }
+
+  .hero h2 {
+    font-size: 5vw;
+    max-width: 75vw;
+  }
+
+  .hamburger,
+.hamburgerClose {
+    top: 4vw;
+    right: 4vw;
+    font-size: 4vw;
+  }
+
+  nav ul {
+    margin-top: 10vw;
+  }
+
+  nav li {
+    margin-bottom: 4vw;
+  }
+
+  .downArrow {
+    display: none;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  .hero {
+    transition: height 999999s;
+  }
+}
 .overlay {
   position: fixed;
   display: none;
@@ -575,6 +688,61 @@ nav li {
     height: 7vw;
     width: 10vw;
     font-size: 3.5vw;
+    padding: 0;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) {
+  .thanks button {
+    padding: 0;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .overlay {
+    padding-top: 30vw;
+  }
+
+  .thanks {
+    width: 70vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  .thanks h2 {
+    font-size: 4em;
+  }
+
+  .thanks h3 {
+    font-size: 3em;
+  }
+
+  .thanks button {
+    height: 7vw;
+    width: 10vw;
+    font-size: 3.5vw;
+    padding: 0;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  .overlay {
+    padding-top: 15vw;
+  }
+
+  .thanks {
+    width: 40vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .thanks h2 {
+    font-size: 2em;
+  }
+
+  .thanks h3 {
+    font-size: 1.5em;
+  }
+
+  .thanks button {
+    padding: 0;
   }
 }
 .grecaptcha-badge {
@@ -639,6 +807,38 @@ nav li {
     font-size: 1.5vw;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .skills {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  #skillsGrid {
+    grid-template-columns: 5vw 40vw 5vw 35vw;
+    row-gap: 3vw;
+    font-size: 3vw;
+  }
+
+  .fa-circle {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  .skills {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  #skillsGrid {
+    grid-template-columns: 5vw 40vw 5vw 35vw;
+    row-gap: 3vw;
+    font-size: 3vw;
+  }
+
+  .fa-circle {
+    font-size: 1.5vw;
+  }
+}
 .whatIDo {
   padding-left: 12vw;
 }
@@ -685,6 +885,36 @@ nav li {
 
   #whatIDoGrid {
     grid-template-columns: 10vw 60vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .whatIDo {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  .whatIDoIcons {
+    font-size: 5.5vw;
+  }
+
+  #whatIDoGrid {
+    grid-template-columns: 10vw 60vw;
+    font-size: 3vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
+  .whatIDo {
+    height: auto;
+    padding-bottom: 8vw;
+  }
+
+  .whatIDoIcons {
+    font-size: 5.5vw;
+  }
+
+  #whatIDoGrid {
+    grid-template-columns: 10vw 60vw;
+    font-size: 3vw;
   }
 }
 .work {
@@ -766,6 +996,24 @@ nav li {
     max-width: 30vw;
   }
 
+  .hunnybee {
+    font-size: 1.5vw;
+  }
+
+  .mobileScreenshots img {
+    width: 16.5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .hunnybee {
+    font-size: 1.5vw;
+  }
+
+  .mobileScreenshots img {
+    width: 16.5vw;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: landscape) {
   .hunnybee {
     font-size: 1.5vw;
   }

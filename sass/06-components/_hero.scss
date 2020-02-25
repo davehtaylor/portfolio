@@ -166,11 +166,43 @@ nav li {
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: portrait) {
+    .hero {
+        height: 65vw;
+    }
 
+    .hero h1 {
+        padding-top: 20vw;
+    }
+
+    .hero h2 {
+        font-size: 5vw;
+        max-width: 75vw;
+    }    
+
+    .hamburger,
+    .hamburgerClose {
+        top: 4vw;
+        right: 4vw;
+        font-size: 4vw;
+    }
+
+    nav ul {
+        margin-top: 10vw;
+    }
+
+    nav li {
+        margin-bottom: 4vw;
+    }
+
+    .downArrow {
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: landscape) {
-
+    .hero {
+        @include mobile-browser-viewport-height-hack;
+    }
 }

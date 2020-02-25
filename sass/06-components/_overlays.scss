@@ -76,23 +76,70 @@
         height: 7vw;
         width: 10vw;
         font-size: 3.5vw;
+        padding: 0;
     }
 }
 
 @media only screen and (min-device-width: $smartphone-breakpoint-portrait) 
         and (max-device-height: $smartphone-breakpoint-landscape) 
         and (orientation: landscape) {
+    .thanks button {
+        padding: 0;
+    }
 
 }
 
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: portrait) {
+    .overlay {
+        padding-top: 30vw;
+    }
 
+    .thanks {
+        width: 70vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .thanks h2 {
+        font-size: 4em;
+    }
+
+    .thanks h3 {
+        font-size: 3em;
+    }
+
+    .thanks button {
+        height: 7vw;
+        width: 10vw;
+        font-size: 3.5vw;
+        padding: 0;
+    }
 }
 
 @media only screen and (min-device-width: $tablet-breakpoint-portrait) 
         and (max-device-height: $tablet-breakpoint-landscape) 
         and (orientation: landscape) {
+    .overlay {
+        padding-top: 15vw;
+    }
 
+    .thanks {
+        width: 40vw;
+        padding-top: 2.5vw;
+        padding-bottom: 2.5vw;
+    }
+
+    .thanks h2 {
+        font-size: 2em;
+    }
+
+    .thanks h3 {
+        font-size: 1.5em;
+    }
+
+    .thanks button {
+        padding: 0;
+    }
 }

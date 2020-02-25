@@ -1,5 +1,12 @@
 %full-height-full-width {
     height: 100vh;
     width: 100vw - 12vw;
-    /* Have to account for the 12vw left padding on all the section divs */
+    // Have to account for the left padding on all the section divs 
+}
+
+@mixin mobile-browser-viewport-height-hack {
+    // When the browser chrome disappears on mobile browsers, a 100vh element 
+    // resizes. I don't want this to happen. This helps that. It's kinda dirty, 
+    // but so is the way the mobile browser behaves. 
+    transition: height 999999s;
 }
